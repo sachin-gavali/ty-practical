@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Navbar Design</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            list-style-type: none;
+            border: none;
+            outline: none;
+            text-decoration: none;
+            font-weight: 500;
+            font-family: sans-serif;
+        }
+
+        .container {
+            width: 80%;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: black;
+            text-align: center;
+            margin-top: 3rem;
+        }
+
+        body {
+            width: 100%;
+            height: 100vh;
+        }
+
+        form {
+            width: 25rem;
+            height: 30rem;
+            background: aqua;
+            margin: 0 auto;
+            margin-top: 2rem;
+            padding: 1.3rem;
+            display: flex;
+            flex-direction: column;
+            gap: 1.7rem;
+        }
+
+        .row {
+            display: grid;
+            grid-template-columns: 30% 65%;
+            gap: 2.5%;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        input,
+        select,
+        option {
+            padding: 0.5rem 0.8rem;
+            width: 100%;
+            border: 1px solid black;
+            border-radius: 0.3rem;
+            font-size: 1rem;
+        }
+
+        label {
+            font-weight: 600;
+            text-align: left;
+        }
+
+        .checkbox {
+            display: flex;
+        }
+
+        .btn {
+            padding: 0.8rem 1rem;
+            font-size: 1.2rem;
+            color: white;
+            border-radius: 0.4rem;
+        }
+
+        .btn-green {
+            background: rgb(73, 212, 8);
+        }
+
+        .btn-blue {
+            background: rgb(30, 70, 230);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Project Management</h1>
+    <form action="php.backend">
+        <div class="row">
+            <label for="name"> Project Name </label>
+            <input type="text" name="name" id="" placeholder="Project Name..." />
+        </div>
+        <div class="row">
+            <label for="name"> Assigned to </label>
+            <select>
+                <option value="one">One</option>
+                <option value="two">two</option>
+                <option value="three">three</option>
+            </select>
+        </div>
+        <div class="row">
+            <label for="name"> Start Date </label>
+            <input type="date" />
+        </div>
+        <div class="row">
+            <label for="name"> End Date </label>
+            <input type="date" />
+        </div>
+        <div class="row">
+            <label for="priority">Priority</label>
+            <div class="checkbox">
+                High <input type="radio" name="gender" /> Avg
+                <input type="radio" name="gender" /> Low
+                <input type="radio" name="gender" />
+            </div>
+        </div>
+        <div class="row">
+            <label for="textarea">Description </label>
+            <textarea name="textarea" cols="30" rows="4"></textarea>
+        </div>
+        <div class="row">
+            <button class="btn-blue btn" type="reset">Clear</button>
+            <button class="btn-green btn" type="submit">Submit</button>
+        </div>
+    </form>
+</body>
+
+</html>

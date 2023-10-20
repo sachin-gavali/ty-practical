@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Slip 14</title>
+    <style>
+      .container {
+        width: 400px;
+        height: 500px;
+        display: grid;
+        grid-template-rows: 30% 1fr;
+        border: 1px solid black;
+        margin: 0 auto;
+      }
+      main {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+      }
+      .col {
+        border: 2px solid black;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="row">row</div>
+      <main>
+        <div class="col">col</div>
+        <div class="col">col</div>
+        <div class="col">col</div>
+      </main>
+    </div>
+  </body>
+</html>
